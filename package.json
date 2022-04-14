@@ -5,9 +5,13 @@
   "main": "main.js",
   "scripts": {
     "test": "node main -p 8080",
-    "start": "node main -p 8080"
+    "start": "node main"
   },
   "author": "esctabcapslock",
   "license": "ISC",
-  "bin":{"onweb":"./main.js"}
+  "bin":{"onweb":"./main.js"},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esctabcapslock/onweb"
+  }
 }
