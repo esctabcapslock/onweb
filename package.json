@@ -1,0 +1,13 @@
+{
+  "name": "onweb",
+  "version": "0.0.0",
+  "description": "Open a simple server from the current directory",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main -p 8080",
+    "start": "node main -p 8080"
+  },
+  "author": "esctabcapslock",
+  "license": "ISC",
+  "bin":{"onweb":"./main.js"}
+}
