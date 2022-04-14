@@ -1,6 +1,6 @@
 {
   "name": "onweb",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Open a simple server on the current directory",
   "main": "main.js",
   "scripts": {
@@ -13,5 +13,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/esctabcapslock/onweb"
-  }
+  },
+  "preferGlobal": true
 }
