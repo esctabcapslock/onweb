@@ -8,7 +8,7 @@
     "start": "node main"
   },
   "author": "esctabcapslock",
-  "license": "ISC",
+  "license": "MIT",
   "bin":{"onweb":"./main.js"},
   "repository": {
     "type": "git",
