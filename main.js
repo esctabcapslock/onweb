@@ -24,7 +24,7 @@ require('http').createServer((req,res)=>{
             const parts = range == undefined ? undefined : range.replace(/bytes=/, "").replace(/\/([0-9|*]+)$/, '').split("-").map(v => parseInt(v));
             console.log('[file_name]',file_name,'[stats]',stats,mime, '[range]',range)
             
-            const file_type = ['txt','css','js','ts','html'].includes(mime)?`text/${mime=='txt'?plain:mime.replace('js','javascript')}; charset=utf-8`:'application'
+            const file_type = ['txt','css','js','ts','html'].includes(mime)?`text/${mime=='txt'?'plain':mime.replace('js','javascript')}; charset=utf-8`:'application'
             // res.writeHead(200, {
             //     'Content-Type':, 
             //     'Content-Length':stats.size, 
