@@ -16,7 +16,7 @@ require('http').createServer((req,res)=>{
             res.end('404 Page Not Found')
         }else if(stats.isDirectory()){
             res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-            res.end('<ul>'+readdirSync(decodeURI(URL)).map(v=>`<li><a href="${URL=="./"?'':URL.replace(/^./,'')}/${v}">${v}</li>`).join('')+'</ul>')
+            res.end('<ul>'+readdirSync(decodeURI(URL)).map(v=>`<li><a href="${URL=="./"?'':encodeURI(URL.replace(/^./,''))}/${encodeURI(v)}">${v}</li>`).join('')+'</ul>')
         }else{
             const file_name = URL.split('/').splice(-1)[0]
             const mime = URL.split('.').splice(-1)[0]
